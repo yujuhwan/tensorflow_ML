@@ -56,7 +56,7 @@ def prediction(X, Y):  # 정확도 올리기기
 
 
 def fit(X, Y, epochs=1000, verbose=100):
-    optimizer =  tf.keras.optimizers.SGD(learning_rate=0.1)
+    optimizer =  tf.keras.optimizers.SGD(learning_rate=0.1)  # 최적화
 
     for i in range(epochs):
         grads = grad_fn(X, Y)
